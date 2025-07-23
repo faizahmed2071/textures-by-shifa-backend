@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Textures By Shifa</title>
+</head>
+<body class="bg-white">
+
+  <div id="header-placeholder"></div>
+  
+  <!-- Hero Section with Split Layout -->
+<section class="bg-gray-100 w-full py-12 sm:py-20" id="home">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center gap-12">
+    
+    <!-- Left Content -->
+    <div class="text-center md:text-left md:w-1/2">
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-800 leading-tight">
+        Bring Your Walls to Life<br />
+        <span class="text-pink-500">with Custom Art</span>
+      </h1>
+      <p class="mt-4 text-gray-600 text-lg">
+        Discover hand-painted masterpieces and personalize them with canvas sizes and artistic styles that suit your space.
+      </p>
+      <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <a href="#shop" class="px-6 py-3 bg-pink-500 text-white rounded-xl hover:bg-pink-600 text-lg transition">
+          Shop Now
+        </a>
+        <a href="#customize" class="px-6 py-3 border border-pink-500 text-pink-500 rounded-xl hover:bg-pink-50 text-lg transition">
+          Customize Yours
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: Slideshow -->
+    <div class="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] overflow-hidden rounded-2xl shadow-lg" style="margin-top: 36px;">
+      <div id="carouselSlides" class="w-full h-full relative">
+        <!-- Slide 1 -->
+        <img src="resources/carousel1.jpg"
+             class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100" />
+        <!-- Slide 2 -->
+        <img src="resources/carousel2.jpg"
+             class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" />
+        <!-- Slide 3 -->
+        <img src="resources/carousel3.jpg"
+             class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" />
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Featured Categories Section (Updated for Square Images) -->
+<section class="py-16 bg-gray-50" id="categories">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Section Heading -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-800">Explore by Style</h2>
+      <p class="mt-2 text-gray-600 text-lg">Choose from unique styles to match your space and vibe</p>
+    </div>
+
+    <!-- Square Image Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <!-- Category 1 -->
+      <a href="#shop" class="group bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="resources/painting.jpg" alt="Paintings"
+               class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold text-gray-800">Paintings</h3>
+          <p class="text-gray-500 mt-1 text-sm">Classic hand-painted designs</p>
+        </div>
+      </a>
+
+      <!-- Category 2 -->
+      <a href="#shop" class="group bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="resources/textured painting.jpg" alt="Texture Art"
+               class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold text-gray-800">Texture Art</h3>
+          <p class="text-gray-500 mt-1 text-sm">Rich and tactile textures</p>
+        </div>
+      </a>
+
+      <!-- Category 3 -->
+      <a href="#shop" class="group bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="resources/lippon.jpg" alt="Lippon Art"
+               class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold text-gray-800">Lippon Art</h3>
+          <p class="text-gray-500 mt-1 text-sm">Bold strokes, vibrant appeal</p>
+        </div>
+      </a>
+
+      <!-- Category 4 -->
+      <a href="#shop" class="group bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <div class="aspect-w-1 aspect-h-1">
+          <img src="resources/Tex+paint.jpg" alt="Textured + Painting"
+               class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold text-gray-800">Textured + Painting</h3>
+          <p class="text-gray-500 mt-1 text-sm">Best of both worlds</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Customize Your Painting Section (Enhanced) -->
+<section class="py-16 bg-gray-100" id="customize">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-800">Customize Your Painting</h2>
+      <p class="mt-2 text-gray-600 text-lg">Select your style, canvas and give your creative input</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-1 gap-12 items-start">
+      <div class="bg-white p-6 rounded-xl shadow-md w-full">
+        <form id="customForm" class="space-y-6">
+          
+          <!-- Canvas Size -->
+          <div>
+            <label class="block mb-1 text-gray-700 font-medium">Canvas Size</label>
+            <select id="canvasSize" class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-pink-400">
+              <option value="8x10">8 x 10 in</option>
+              <option value="12x16">12 x 16 in</option>
+              <option value="16x20">16 x 20 in</option>
+              <option value="18x24">18 x 24 in</option>
+            </select>
+          </div>
+
+          <!-- Art Type with Better Tooltips -->
+<div>
+  <label class="block mb-2 text-gray-700 font-medium">Select Art Type</label>
+
+  <!-- Responsive Grid: 2 columns on sm+, 1 column on mobile -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 relative">
+
+    <!-- Painting -->
+    <!-- Painting with Closeable Tooltip -->
+<div class="relative">
+  <input type="hidden" name="artType" id="artTypeInput" />
+
+  <button type="button"
+          class="art-btn border border-pink-500 text-pink-500 rounded-lg py-2 w-full flex items-center justify-between px-4 transition"
+          data-art="Painting"
+          onclick="selectArt('Painting')">
+    Painting
+    <span class="text-gray-400 text-xl cursor-pointer"  onclick="toggleInfo('info1')">ℹ️</span>
+  </button>
+
+  <!-- Tooltip Box -->
+  <div id="info1"
+       class="hidden absolute left-0 w-64 mt-2 bg-white border border-pink-200 rounded-xl shadow-lg p-4 text-sm text-gray-700 z-20 relative">
+
+    <!-- Close Button -->
+    <button type="button" onclick="closeInfo('info1')"
+            class="absolute top-2 right-2 text-gray-400 hover:text-gray-600 text-lg font-bold focus:outline-none">
+      ×
+    </button>
+
+    <!-- Tooltip Content -->
+    🎨 <strong>Painting:</strong><br>
+    Traditional hand-painted artwork using brush strokes and color tones.
+  </div>
+</div>
+
+
+<!-- Painting with Closeable Tooltip -->
+<div class="relative">
+  <button type="button"
+          class="art-btn border border-pink-500 text-pink-500 rounded-lg py-2 w-full flex items-center justify-between px-4 transition"
+          data-art="Textured Art"
+          onclick="selectArt('Textured Art')">
+    Textured Art
+    <span class="text-gray-400 text-xl cursor-pointer" onclick="toggleInfo('info2')">ℹ️</span>
+  </button>
+
+  <!-- Tooltip Box -->
+  <div id="info2"
+       class="hidden absolute left-0 w-64 mt-2 bg-white border border-pink-200 rounded-xl shadow-lg p-4 text-sm text-gray-700 z-20 relative">
+
+    <!-- Close Button -->
+    <button type="button" onclick="closeInfo('info2')"
+            class="absolute top-2 right-2 text-gray-400 hover:text-gray-600 text-lg font-bold focus:outline-none">
+      ×
+    </button>
+
+    <!-- Tooltip Content -->
+    🎨 <strong>Textured Art:</strong><br>
+    Features raised textures and depth for a tactile feel.
+  </div>
+</div>
+
+
+<!-- Painting with Closeable Tooltip -->
+<div class="relative">
+  <button type="button"
+          class="art-btn border border-pink-500 text-pink-500 rounded-lg py-2 w-full flex items-center justify-between px-4 transition"
+          data-art="Lippan Art"
+          onclick="selectArt('Lippan Art')">
+    Lippan Art
+    <span class="text-gray-400 text-xl cursor-pointer"  onclick="toggleInfo('info3')">ℹ️</span>
+  </button>
+
+  <!-- Tooltip Box -->
+  <div id="info3"
+       class="hidden absolute left-0 w-64 mt-2 bg-white border border-pink-200 rounded-xl shadow-lg p-4 text-sm text-gray-700 z-20 relative">
+
+    <!-- Close Button -->
+    <button type="button" onclick="closeInfo('info3')"
+            class="absolute top-2 right-2 text-gray-400 hover:text-gray-600 text-lg font-bold focus:outline-none">
+      ×
+    </button>
+
+    <!-- Tooltip Content -->
+    🎨 <strong>Lippan Art:</strong><br>
+     Glossy, glamorous art with bold accents and glitter.
+  </div>
+</div>
+
+
+<!-- Painting with Closeable Tooltip -->
+<div class="relative">
+  <button type="button"
+          class="art-btn border border-pink-500 text-pink-500 rounded-lg py-2 w-full flex items-center justify-between px-4 transition"
+          data-art="Textured + Painting"
+          onclick="selectArt('Textured + Painting')">
+    Textured + Painting
+    <span class="text-gray-400 text-xl cursor-pointer" onclick="toggleInfo('info4')">ℹ️</span>
+  </button>
+
+  <!-- Tooltip Box -->
+  <div id="info4"
+       class="hidden absolute left-0 w-64 mt-2 bg-white border border-pink-200 rounded-xl shadow-lg p-4 text-sm text-gray-700 z-20 relative">
+
+    <!-- Close Button -->
+    <button type="button" onclick="closeInfo('info4')"
+            class="absolute top-2 right-2 text-gray-400 hover:text-gray-600 text-lg font-bold focus:outline-none">
+      ×
+    </button>
+
+    <!-- Tooltip Content -->
+    🎨 <strong>Textured + Painting:</strong><br>
+     Combines brushwork and texture for a layered effect.
+  </div>
+</div>
+
+
+    
+    
+  </div>
+</div>
+         <!-- Color Palette Section (with RGB extractor) -->
+<div>
+  <label class="block mb-2 text-gray-700 font-medium"> Color Palette</label>
+  <div class="flex flex-col gap-3">
+
+    <!-- Color Row -->
+    <div class="flex items-center gap-4">
+      <!-- Color Picker -->
+      <input type="color" id="colorPicker" class="w-14 h-10 rounded border border-gray-300">
+
+      <!-- RGB Code (auto-filled) -->
+      <input type="text" id="rgbOutput" readonly
+             class="border border-gray-300 p-2 rounded-lg w-44 text-gray-600 bg-gray-100 cursor-default"
+             placeholder="RGB value">
+    </div>
+
+    <!-- Color Name -->
+    <input type="text" placeholder="Color name (e.g. Sky Blue)"
+           id="colorName" class="border p-2 rounded-lg w-full border-gray-300">
+  </div>
+</div>
+
+          <!-- Conditional Text Field (if Painting or Textured + Painting) -->
+          <div id="contentField" class="hidden">
+            <label class="block mb-1 text-gray-700 font-medium mt-4">Text on Painting</label>
+            <input type="text" placeholder="Enter text to be written on the painting"
+                   id="textOnPainting" class="w-full border border-gray-300 p-2 rounded-lg">
+          </div>
+
+          <!-- Painting Idea Text Area -->
+          <div>
+            <label class="block mb-1 text-gray-700 font-medium">Describe Your Idea</label>
+            <textarea id="idea" rows="4" placeholder="Describe how you want the painting to be..."
+                      class="w-full border border-gray-300 p-2 rounded-lg resize-none"></textarea>
+          </div>
+
+          <!-- Contact Details Heading -->
+          <div class="mb-6">
+            <h3 class="text-2xl font-semibold text-gray-800">Contact Details</h3>
+            <p class="text-gray-600 mt-1 text-sm">Let us know how to get in touch with you regarding your custom artwork.</p>
+          </div>
+
+
+          <!-- Customer Details -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- Name -->
+              <div>
+                <label for="customerName" class="block mb-1 text-gray-700 font-medium">Your Name</label>
+                <input type="text" id="customerName" name="customerName" placeholder="Enter your name"
+                      class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-pink-400" required>
+              </div>
+
+              <!-- Email -->
+              <div>
+                <label for="customerEmail" class="block mb-1 text-gray-700 font-medium">Email Address</label>
+                <input type="email" id="customerEmail" name="customerEmail" placeholder="Enter your email"
+                      class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-pink-400" required>
+              </div>
+
+              <!-- Phone -->
+              <div class="md:col-span-2">
+                <label for="customerPhone" class="block mb-1 text-gray-700 font-medium">Phone Number</label>
+                <input type="tel" id="customerPhone" name="customerPhone" placeholder="e.g. +91 9876543210"
+                      class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-pink-400">
+              </div>
+            </div>
+
+
+          <!-- CTA -->
+          <button type="submit" 
+                  class="w-full bg-pink-500 text-white py-3 rounded-lg text-lg hover:bg-pink-600 transition">
+            Place Order
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Preview Modal -->
+<div id="previewModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-xl p-6 max-w-xl w-full shadow-xl relative">
+    
+    <h3 class="text-2xl font-bold text-gray-800 mb-4">Preview Your Order</h3>
+    
+    <div class="space-y-2 text-gray-700 text-sm" id="previewContent">
+      <!-- JS will populate preview here -->
+    </div>
+
+    <div class="mt-6 flex justify-end gap-4">
+      <button onclick="closePreview()" class="px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300 text-sm">Edit Details</button>
+      <button onclick="submitConfirmed()" class="px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 text-sm">Confirm & Submit</button>
+    </div>
+  </div>
+</div>
+<!-- ✅ Success Modal -->
+<div id="successModal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden transition-all duration-300 scale-95 opacity-0">
+  <div class="bg-white rounded-2xl p-6 text-center shadow-xl w-80 transform transition-all duration-500 scale-95 opacity-0 animate-fade-in">
+    <div class="text-green-500 text-5xl mb-2 animate-bounce">✅</div>
+    <h2 class="text-xl font-semibold mb-2">Order Placed!</h2>
+    <p class="text-gray-600 mb-4">We’ve received your custom order and will contact you shortly.</p>
+    <button onclick="closeSuccessModal()"
+      class="mt-2 bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+      Close
+    </button>
+  </div>
+</div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script>
+  // Load Header
+  fetch('/header.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("header-placeholder").innerHTML = data;
+    });
+fetch('/footer.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('footer-placeholder').innerHTML = html;
+    });
+
+function showSuccessModal() {
+  const modal = document.getElementById("successModal");
+  modal.classList.remove("hidden");
+
+  // Animate modal in using opacity/scale
+  const box = modal.querySelector("div");
+  box.classList.remove("scale-95", "opacity-0");
+  box.classList.add("scale-100", "opacity-100");
+
+  // Ensure modal is fully visible
+  modal.classList.add("opacity-100");
+  modal.classList.remove("opacity-0");
+}
+
+function closeSuccessModal() {
+  const modal = document.getElementById("successModal");
+  const box = modal.querySelector("div");
+
+  // Animate modal out using opacity/scale
+  box.classList.add("scale-95", "opacity-0");
+  box.classList.remove("scale-100", "opacity-100");
+
+  // Delay hiding to allow animation to complete
+  setTimeout(() => {
+    modal.classList.add("hidden");
+    modal.classList.remove("opacity-100");
+    modal.classList.add("opacity-0");
+  }, 300); // matches duration-300
+}
+
+
+    let selectedArt = ""; // Global variable for art type
+
+  function selectArt(type) {
+    selectedArt = type;
+
+    // Highlight selected button
+    document.querySelectorAll(".art-btn").forEach(btn => {
+      btn.classList.remove("bg-pink-500", "text-white");
+      btn.classList.add("text-pink-500", "bg-white");
+    });
+
+    const selectedBtn = [...document.querySelectorAll(".art-btn")].find(btn => btn.dataset.art === type);
+    if (selectedBtn) {
+      selectedBtn.classList.add("bg-pink-500", "text-white");
+    }
+
+    // Toggle "text on painting" field
+    const contentField = document.getElementById("contentField");
+    if (type === "Painting" || type === "Textured + Painting") {
+      contentField.classList.remove("hidden");
+    } else {
+      contentField.classList.add("hidden");
+    }
+  }
+
+  // Form Submission
+  document.getElementById("customForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const canvasSize = document.getElementById("canvasSize").value;
+    const colorHex = document.getElementById("colorPicker").value;
+    const rgbCode = document.getElementById("rgbOutput").value;
+    const colorName = document.getElementById("colorName").value;
+    const artType = document.getElementById("artTypeInput").value;
+    const textOnPainting = document.getElementById("textOnPainting").value;
+    const idea = document.getElementById("idea").value;
+    const customerName = document.getElementById("customerName").value;
+    const customerEmail = document.getElementById("customerEmail").value;
+    const customerPhone = document.getElementById("customerPhone").value;
+
+    const data = {
+      canvasSize,
+      artType,
+      color: {
+        name: colorName,
+        hex: colorHex,
+        rgb: rgbCode
+      },
+      textOnPainting,
+      idea,
+      customerName,
+      customerEmail,
+      customerPhone
+    };
+
+    try {
+      const res = await fetch("http://localhost:5000/api/order/custom", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+
+      const result = await res.json();
+      if (res.ok) {
+        
+        document.getElementById("customForm").reset();
+      } else {
+        alert("❌ Submission failed: " + result.message);
+      }
+    } catch (err) {
+      console.error("Submission error:", err.message || err);
+      alert("⚠️ Something went wrong. Try again.");
+    }
+  });
+
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+     const slides = document.querySelectorAll(".carousel-image");
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("opacity-100");
+      slide.classList.add("opacity-0");
+      if (i === index) {
+        slide.classList.remove("opacity-0");
+        slide.classList.add("opacity-100");
+      }
+    });
+  }
+
+  // Auto slide every 5 seconds
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }, 3000);
+
+
+    function toggleInfo(id) {
+    const tooltips = document.querySelectorAll('[id^=info]');
+    tooltips.forEach(t => {
+      if (t.id !== id) t.classList.add('hidden'); // hide others
+    });
+    const tooltip = document.getElementById(id);
+    tooltip.classList.toggle('hidden');
+  }
+
+  function closeInfo(id) {
+    document.getElementById(id).classList.add('hidden');
+  }
+
+  function selectArt(selectedType) {
+  // Set hidden input field value
+  document.getElementById("artTypeInput").value = selectedType;
+
+  // Highlight selected button and reset others
+  const buttons = document.querySelectorAll(".art-btn");
+  buttons.forEach(btn => {
+    const isSelected = btn.getAttribute("data-art") === selectedType;
+    btn.classList.toggle("bg-pink-500", isSelected);
+    btn.classList.toggle("text-white", isSelected);
+    btn.classList.toggle("text-pink-500", !isSelected);
+
+    // Also reset any inner span (ℹ️) if needed
+    const infoIcon = btn.querySelector("span");
+    if (infoIcon) {
+      infoIcon.classList.toggle("text-white", isSelected);
+      infoIcon.classList.toggle("text-gray-400", !isSelected);
+    }
+  });
+
+  // Show/hide the "idea/content" field
+  const showField = ["Painting", "Textured + Painting"].includes(selectedType);
+  const contentField = document.getElementById("contentField");
+  if (contentField) {
+    contentField.classList.toggle("hidden", !showField);
+  }
+}
+
+  
+  const colorPicker = document.getElementById("colorPicker");
+  const rgbOutput = document.getElementById("rgbOutput");
+
+  colorPicker.addEventListener("input", function () {
+    const hex = colorPicker.value;
+    const rgb = hexToRgb(hex);
+    rgbOutput.value = rgb;
+  });
+
+  // Convert hex color to RGB string
+  function hexToRgb(hex) {
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
+    return `rgb(${r}, ${g}, ${b})`;
+  }
+
+  const form = document.getElementById('customForm');
+  const previewModal = document.getElementById('previewModal');
+  const previewContent = document.getElementById('previewContent');
+  let formDataCache = {};
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // Stop normal form submit
+
+    const canvasSize = document.getElementById('canvasSize').value;
+    const artType = document.getElementById('artTypeInput').value;
+    const colorName = document.getElementById('colorName').value;
+    const rgbCode = document.getElementById('rgbOutput').value;
+    const colorHex = document.getElementById('colorPicker').value;
+    const textOnPainting = document.getElementById('textOnPainting')?.value || '';
+    const idea = document.getElementById('idea').value;
+    const customerName = document.getElementById('customerName').value;
+    const customerEmail = document.getElementById('customerEmail').value;
+    const customerPhone = document.getElementById('customerPhone').value;
+
+    formDataCache = {
+      canvasSize,
+      artType,
+      colorName,
+      rgbCode,
+      colorHex,
+      textOnPainting,
+      idea,
+      customerName,
+      customerEmail,
+      customerPhone
+    };
+
+    // Populate preview
+    previewContent.innerHTML = `
+      <p><strong>Canvas Size:</strong> ${canvasSize}</p>
+      <p><strong>Art Type:</strong> ${artType}</p>
+      <p><strong>Color:</strong> ${colorName} – ${colorHex} – ${rgbCode}</p>
+      ${textOnPainting ? `<p><strong>Text on Painting:</strong> ${textOnPainting}</p>` : ''}
+      <p><strong>Idea:</strong> ${idea}</p>
+      <hr class="my-2">
+      <p><strong>Name:</strong> ${customerName}</p>
+      <p><strong>Email:</strong> ${customerEmail}</p>
+      <p><strong>Phone:</strong> ${customerPhone}</p>
+    `;
+
+    previewModal.classList.remove('hidden');
+  });
+
+  function closePreview() {
+    previewModal.classList.add('hidden');
+  }
+
+  let isSubmitting = false;
+
+  function submitConfirmed() {
+    if (isSubmitting) return; // Prevent double submit
+    isSubmitting = true;
+
+    // Disable the button and show loading spinner
+    const confirmBtn = document.querySelector('#previewModal button.bg-pink-500');
+    confirmBtn.disabled = true;
+    confirmBtn.innerHTML = `<svg class="animate-spin h-5 w-5 mr-2 inline-block text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path></svg>Submitting...`;
+
+    // Gather form data from formDataCache (already populated in preview)
+    const data = {
+      canvasSize: formDataCache.canvasSize,
+      artType: formDataCache.artType,
+      color: {
+        name: formDataCache.colorName,
+        hex: formDataCache.colorHex,
+        rgb: formDataCache.rgbCode
+      },
+      textOnPainting: formDataCache.textOnPainting,
+      idea: formDataCache.idea,
+      customerName: formDataCache.customerName,
+      customerEmail: formDataCache.customerEmail,
+      customerPhone: formDataCache.customerPhone,
+      confirmed: true
+    };
+
+    fetch("http://localhost:5000/api/order/custom", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    })
+    .then(res => res.json())
+    .then(result => {
+      isSubmitting = false;
+      confirmBtn.disabled = false;
+      confirmBtn.innerHTML = "Confirm & Submit";
+      if (result && result.message && !result.preview) {
+        closePreview();
+        setTimeout(() => {
+          showSuccessModal();
+        }, 350); // Wait for preview modal to close/animate
+        document.getElementById("customForm").reset();
+      } else {
+        alert("❌ Submission failed: " + (result.message || "Unknown error"));
+      }
+    })
+    .catch(err => {
+      isSubmitting = false;
+      confirmBtn.disabled = false;
+      confirmBtn.innerHTML = "Confirm & Submit";
+      alert("⚠️ Something went wrong. Try again.");
+      console.error(err);
+    });
+  }
+
+
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!-- Navbar -->
+  <header class="w-full fixed top-0 bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        
+        <!-- Logo -->
+        <div class="flex-shrink-0 text-2xl font-bold text-gray-800">
+          Textures By Shifa
+        </div>
+
+        <!-- Desktop Nav Links -->
+        <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+          <a href="#" class="hover:text-black">Home</a>
+          <a href="#shop" class="hover:text-black">Shop</a>
+          <a href="#customize" class="hover:text-black">Customize</a>
+          <a href="#about" class="hover:text-black">About</a>
+          <a href="#reviews" class="hover:text-black">Reviews</a>
+          <a href="#contact" class="hover:text-black">Contact</a>
+        </nav>
+
+        <!-- Right Icons -->
+        <div class="hidden md:flex items-center space-x-4">
+          <!-- Cart Icon -->
+          <button class="relative">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 3h13m-9 0a1 1 0 11-2 0 1 1 0 012 0zm8 0a1 1 0 11-2 0 1 1 0 012 0z" />
+            </svg>
+            <span class="absolute -top-1 -right-2 bg-red-500 text-white text-xs px-1.5 rounded-full">2</span>
+          </button>
+
+          <!-- Search Icon -->
+          <button>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-btn" class="focus:outline-none">
+            <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pt-4 pb-6 space-y-4 bg-white shadow-lg">
+      <a href="#" class="block text-gray-700 hover:text-black">Home</a>
+      <a href="#shop" class="block text-gray-700 hover:text-black">Shop</a>
+      <a href="#customize" class="block text-gray-700 hover:text-black">Customize</a>
+      <a href="#about" class="block text-gray-700 hover:text-black">About</a>
+      <a href="#reviews" class="block text-gray-700 hover:text-black">Reviews</a>
+      <a href="#contact" class="block text-gray-700 hover:text-black">Contact</a>
+    </div>
+  </header>
